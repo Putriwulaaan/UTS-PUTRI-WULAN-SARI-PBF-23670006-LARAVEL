@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="blue-theme">
+
+@include('partials.admin.head')
+
+<body>
+    @include('partials.admin.header')
+
+    <main class="main-wrapper">
+        <div class="main-content">
+            <!--breadcrumb-->
+            <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+                <div class="breadcrumb-title pe-3">Components</div>
+                <div class="ps-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0 p-0">
+                            <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Modals</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="ms-auto">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Settings</button>
+                        <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
+                            href="javascript:;">Action</a>
+                            <a class="dropdown-item" href="javascript:;">Another action</a>
+                            <a class="dropdown-item" href="javascript:;">Something else here</a>
+                            <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end breadcrumb-->
+
+
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="card rounded-4">
+                        <div class="card-body">
+                            <h5 class="mb-0">Basic Modal</h5>
+                            <p class="my-3">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual
+                                content. </p>
+                            <div class="">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-grd-primary px-4" data-bs-toggle="modal"
+                                    data-bs-target="#BasicModal">Click Me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="BasicModal">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-bottom-0 py-2">
+                                                <h5 class="modal-title">Modal title</h5>
+                                                <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                                                    <i class="material-icons-outlined">close</i>
+                                                </a>
+                                            </div>
+                                            <div class="modal-body">It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is
+                                                that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                                content here', making
+                                                it look like readable English. Many desktop publishing packages and web page editors now use
+                                                Lorem Ipsum as their
+                                                default model text, and a search for
+                                                'lorem ipsum' will uncover many web sites still in their infancy.</div>
+                                            <div class="modal-footer border-top-0">
+                                                <button type="button" class="btn btn-grd-danger" data-bs-dismiss="modal">Delete</button>
+                                                <button type="button" class="btn btn-grd-info">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="card rounded-4">
+                        <div class="card-body">
+                            <h5 class="mb-0">Scrollable Modal</h5>
+                            <p class="my-3">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual
+                                content. </p>
+                            <div class="">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-grd-primary px-4" data-bs-toggle="modal"
+                                    data-bs-target="#ScrollableModal">Click Me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ScrollableModal">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-bottom-0 bg-grd-primary py-2">
+                                                <h5 class="modal-title">Order Summary</h5>
+                                                <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                                                    <i class="material-icons-outlined">close</i>
+                                                </a>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="order-summary">
+                                                    <div class="card mb-0">
+                                                        <div class="card-body">
+                                                            <div class="card border bg-transparent shadow-none mb-3">
+                                                                <div class="card-body">
+                                                                    <p class="fs-5">Apply Discount Code</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" placeholder="Enter discount code">
+                                                                        <button class="btn btn-grd-primary" type="button">Apply</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card border bg-transparent shadow-none">
+                                                                <div class="card-body">
+                                                                    <p class="fs-5">Order summary</p>
+                                                                    <div class="my-3 border-top"></div>
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <a class="d-block flex-shrink-0" href="javascript:;">
+                                                                            <img src="assets/images/top-products/06.png" width="60" height="60" alt="Product">
+                                                                        </a>
+                                                                        <div class="ps-2">
+                                                                            <h6 class="mb-1"><a href="javascript:;" class="text-white">White Polo T-Shirt</a>
+                                                                            </h6>
+                                                                            <div class="widget-product-meta"><span
+                                                                                    class="me-2">$19.<small>00</small></span><span class="">x 1</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="my-3 border-top"></div>
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <a class="d-block flex-shrink-0" href="javascript:;">
+                                                                            <img src="assets/images/top-products/05.png" width="60" height="60" alt="Product">
+                                                                        </a>
+                                                                        <div class="ps-2">
+                                                                            <h6 class="mb-1"><a href="javascript:;" class="text-white">White Polo T-Shirt</a>
+                                                                            </h6>
+                                                                            <div class="widget-product-meta"><span
+                                                                                    class="me-2">$19.<small>00</small></span><span class="">x 1</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="my-3 border-top"></div>
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <a class="d-block flex-shrink-0" href="javascript:;">
+                                                                            <img src="assets/images/top-products/04.png" width="60" height="60" alt="Product">
+                                                                        </a>
+                                                                        <div class="ps-2">
+                                                                            <h6 class="mb-1"><a href="javascript:;" class="text-white">White Polo T-Shirt</a>
+                                                                            </h6>
+                                                                            <div class="widget-product-meta"><span
+                                                                                    class="me-2">$19.<small>00</small></span><span class="">x 1</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="my-3 border-top"></div>
+                                                                    <div class="d-flex align-items-center gap-3">
+                                                                        <a class="d-block flex-shrink-0" href="javascript:;">
+                                                                            <img src="assets/images/top-products/03.png" width="60" height="60" alt="Product">
+                                                                        </a>
+                                                                        <div class="ps-2">
+                                                                            <h6 class="mb-1"><a href="javascript:;" class="text-white">Fancy Red Sneakers</a>
+                                                                            </h6>
+                                                                            <div class="widget-product-meta"><span
+                                                                                    class="me-2">$16.<small>00</small></span><span class="">x 2</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </main>
+
+    @include('partials.admin.footer')
+
+    @include('partials.admin.scripts')
+</body>
+
+</html>
